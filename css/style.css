@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.primary-btn {
+    background: #1b7f3b;
+    color: #fff;
+}
+
+.secondary-btn {
+    border: 2px solid #1b7f3b;
+    color: #1b7f3b;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    color: #fff;
+}
+
+.whatsapp-btn.large {
+    padding: 15px 25px;
+    font-size: 1.1rem;
+}
+
+/* Header */
+.header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+/* Hero */
+.hero {
+    background: #f8faf8;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    margin: 15px 0;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Why */
+.why {
+    padding: 50px 0;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.why-card {
+    text-align: center;
+}
+
+.why-card img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Pricing */
+.pricing {
+    background: #f8faf8;
+    padding: 50px 0;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.price-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.price-card.featured {
+    border: 2px solid #1b7f3b;
+}
+
+.price {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+/* Order */
+.order {
+    padding: 50px 0;
+}
+
+.order-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.order-form form input,
+.order-form form select,
+.order-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.form-note {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    color: #ccc;
+    padding: 20px 0;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-grid,
+    .why-grid,
+    .pricing-grid,
+    .order-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
