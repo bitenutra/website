@@ -16,16 +16,59 @@
 <body>
 
 <!-- ================= HEADER ================= -->
-<header class="header">
-    <div class="container header-flex">
-        <img src="images/bitenutra-logo.png" alt="Bitenutra Logo" class="logo" />
-        <a class="btn whatsapp-btn"
-           href="https://wa.me/917702263222?text=Hi%2C%20I%20want%20to%20order%20Bitenutra%20Premium%20Makhana.%0AQuantity%3A%20_%0ADelivery%20City%3A%20_"
-           target="_blank">
-            Order on WhatsApp
-        </a>
+<header class="site-header">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-flex">
+
+            <!-- Logo -->
+            <div class="logo-wrap">
+                <img src="images/bitenutra-logo.png" alt="Bitenutra Logo" class="logo" />
+            </div>
+
+            <!-- Search -->
+            <div class="search-bar">
+                <select aria-label="Search category">
+                    <option>All</option>
+                    <option>Raw Makhana</option>
+                    <option>Flavoured Makhana</option>
+                </select>
+                <input type="text" placeholder="Search Bitenutra..." />
+                <button aria-label="Search">
+                    🔍
+                </button>
+            </div>
+
+            <!-- Right Actions -->
+            <div class="header-actions">
+                <span class="lang">🇮🇳 EN</span>
+
+                <a href="#order" class="account">
+                    Hello,<br /><strong>Order</strong>
+                </a>
+
+                <a href="#order" class="cart">
+                    🛒 <span>Cart</span>
+                </a>
+            </div>
+
+        </div>
     </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="container nav-flex">
+            <a href="#" class="nav-link active">HOME</a>
+            <a href="#" class="nav-link">Raw Makhana</a>
+            <a href="#" class="nav-link">Flavoured Makhana</a>
+            <a href="#" class="nav-link">RECIPES</a>
+            <a href="#" class="nav-link">GIFTING</a>
+        </div>
+    </nav>
+
 </header>
+
 
 <!-- ================= HERO ================= -->
 <section class="hero">

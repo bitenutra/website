@@ -187,3 +187,113 @@ body {
     }
 }
 
+/* ================= HEADER (AMAZON-STYLE) ================= */
+
+.site-header {
+    width: 100%;
+}
+
+/* Top yellow bar */
+.top-bar {
+    background: linear-gradient(90deg, #f6b01a, #f0a000);
+    padding: 10px 0;
+}
+
+.top-bar-flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo */
+.logo-wrap .logo {
+    height: 42px;
+}
+
+/* Search bar */
+.search-bar {
+    flex: 1;
+    display: flex;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.search-bar select {
+    border: none;
+    padding: 8px;
+    background: #f3f3f3;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+}
+
+.search-bar button {
+    border: none;
+    background: #ffcc66;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+/* Right actions */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.header-actions a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Navigation bar */
+.nav-bar {
+    background: #111;
+}
+
+.nav-flex {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: #ddd;
+    text-decoration: none;
+    padding: 12px 0;
+    font-weight: 500;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #fff;
+    border-bottom: 3px solid #f6b01a;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    .top-bar-flex {
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-flex {
+        overflow-x: auto;
+        gap: 20px;
+    }
+}
